@@ -54,6 +54,10 @@
     100%   { transform: translate(0, -0px); }
 }
 
-.next-section-button {
+.next-section-container {
     cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(149,192,226, 0.3);
+    height: 50px;
+    width: 50px;
 }
