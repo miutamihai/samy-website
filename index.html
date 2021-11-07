@@ -18,7 +18,7 @@
     <div class="row full-parent-height">
         <div class="col-7">
             <div class="d-flex justify-content-center flex-column full-parent-height">
-                <img src="common/assets/profile.jpg" alt="profile" class="profile"/>
+                <img src="common/assets/profile.jpg" alt="profile" class="profile round-image shadow"/>
             </div>
         </div>
         <div class="col-5">
@@ -35,15 +35,40 @@
         </div>
         <div class="col-12">
             <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
-                <i class="fas fa-chevron-down floating next-section-button" style="font-size: 40px" onclick="onNextSectionClick()"></i>
+                <i class="fas fa-chevron-down floating next-section-button" style="font-size: 40px" onclick="onFirstArrowClick()"></i>
             </div>
         </div>
     </div>
 </div>
-<div class="full-screen-height" id="firstSection">
-   <div class="d-flex align-items-center justify-content-center full-parent-height">
-       CONTENT
-   </div>
+<div class="container full-screen-height" id="firstSection">
+    <div class="row full-parent-height">
+        <div class="col-5">
+            <div class="d-flex align-items-center full-parent-height">
+                <div class="card border-primary mb-3" style="max-width: 60rem;">
+                    <div class="card-header">About</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Who am I?</h4>
+                        <p class="card-text">I am a super cute kitty and I'm about 4 months old. I like climbing, watching birds, eating and napping. I'm pretty shy when it comes to strangers, but I love playing with them if they play with me. But be careful, my new teeth are just coming out so I might bite you. 😸</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-7">
+            <div class="d-flex justify-content-center flex-column full-parent-height align-items-center">
+                <img src="common/assets/first-section.jpg" alt="profile" class="round-image shadow"/>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
+                <i class="fas fa-chevron-down floating next-section-button" style="font-size: 40px" onclick="onSecondArrowClick()"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container full-screen-height" id="secondSection">
+    <div class="d-flex align-items-center justify-content-center full-parent-height">
+        CONTENT
+    </div>
 </div>
 </body>
 </html>

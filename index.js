@@ -29,5 +29,7 @@ window.onload = () => {
 	getProfile().addEventListener('mouseenter', () => getAudio().play())
 }
 
-const onNextSectionClick = () => document.getElementById('firstSection').scrollIntoView()
+const onFirstArrowClick = () => document.getElementById('firstSection').scrollIntoView()
+
+const onSecondArrowClick = () => document.getElementById('secondSection').scrollIntoView()
 
