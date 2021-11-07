@@ -1,7 +1,11 @@
 const messages = ['Salut,', 'Hello,', 'Meow,']
 let rank=0
 
-const getElement = () => document.getElementById('typewriter')
+const getTypewriter = () => document.getElementById('typewriter')
+
+const getProfile = () => document.getElementsByClassName('profile').item(0)
+
+const getAudio = () => document.getElementsByTagName('audio')[0]
 
 function changeText () {
 	let _h1 = this.getElementsByTagName('h1')[0]
@@ -20,8 +24,9 @@ const applyChange = _h1 => () => {
 }
 
 window.onload = () => {
-	getElement().addEventListener("webkitAnimationEnd", changeText)
-	getElement().addEventListener("animationend", changeText)
+	getTypewriter().addEventListener("webkitAnimationEnd", changeText)
+	getTypewriter().addEventListener("animationend", changeText)
+	getProfile().addEventListener('mouseenter', () => getAudio().play())
 }
 
 const onNextSectionClick = () => document.getElementById('firstSection').scrollIntoView()
