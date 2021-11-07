@@ -1,4 +1,4 @@
-const messages = ['Salut,', 'Hello,', 'Meow,']
+const messages = ['Salut,', 'Hola,', 'Meow,', 'Hello,' ]
 let rank=0
 
 const getTypewriter = () => document.getElementById('typewriter')
