@@ -43,13 +43,7 @@ window.onload = () => {
 
 window.onscroll = scroll
 
-const onFirstArrowClick = () => document.getElementById('firstSection').scrollIntoView()
-
-const onSecondArrowClick = () => document.getElementById('secondSection').scrollIntoView()
-
-const onCodingArrowClick = () => document.getElementById('codingSection').scrollIntoView()
-
-const onOwnerArrowClick = () => document.getElementById('ownerSection').scrollIntoView()
+const goToSection = section => document.getElementById(section).scrollIntoView()
 
 const goToTop = () => {
 	getLandingContainer().scrollIntoView()

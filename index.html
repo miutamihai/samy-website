@@ -87,7 +87,7 @@
         <div class="col-12">
             <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
                 <div class="floating next-section-container d-flex align-items-center justify-content-center">
-                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="onFirstArrowClick()"></i>
+                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="goToSection('firstSection')"></i>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
         <div class="col-12">
             <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
                 <div class="floating next-section-container d-flex align-items-center justify-content-center">
-                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="onSecondArrowClick()"></i>
+                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="goToSection('secondSection')"></i>
                 </div>
             </div>
         </div>
@@ -209,7 +209,7 @@
         <div class="col-12">
             <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
                 <div class="floating next-section-container d-flex align-items-center justify-content-center">
-                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="onCodingArrowClick()"></i>
+                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="goToSection('codingSection')"></i>
                 </div>
             </div>
         </div>
@@ -246,15 +246,42 @@
         <div class="col-12">
             <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
                 <div class="floating next-section-container d-flex align-items-center justify-content-center">
-                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="onOwnerArrowClick()"></i>
+                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="goToSection('ownerSection')"></i>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="container full-screen-height" id="ownerSection">
-    <div class="d-flex align-items-center justify-content-center full-parent-height">
-        <h1>Speaking of my owner... check him out <a href="owner/index.html">here</a></h1>
+    <div class="row full-parent-height py-2">
+        <div class="col-12">
+            <div class="d-flex align-items-center justify-content-center full-parent-height">
+                <h1>Speaking of my owner... check him out <a href="owner/index.html">here</a></h1>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
+                <div class="floating next-section-container d-flex align-items-center justify-content-center">
+                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="goToSection('gallerySection')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container full-screen-height" id="gallerySection">
+    <div class="row full-parent-height py-2">
+        <div class="col-12">
+            <div class="d-flex align-items-center justify-content-center full-parent-height">
+                <h1>Want to see more of my photos? See <a href="gallery/index.html">here</a></h1>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
+                <div class="floating next-section-container d-flex align-items-center justify-content-center">
+                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="goToSection('gallerySection')"></i>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
