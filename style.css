@@ -83,3 +83,20 @@ tbody tr {
 .code-background {
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+#upScrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#upScrollButton:hover {
+    background-color: #555;
+}

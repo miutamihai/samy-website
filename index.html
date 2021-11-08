@@ -22,6 +22,11 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
+<div id="upScrollButton" class="next-section-container" onclick="goToTop()">
+    <div class="d-flex full-parent-height full-parent-width align-items-center justify-content-center">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+</div>
 <div class="modal fade" id="no-like" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -60,7 +65,7 @@
     <source src="common/assets/meow.wav"></source>
     Your ears won't hear this cat's beautiful voice.
 </audio>
-<div class="container full-screen-height">
+<div class="container full-screen-height" id="landingContainer">
     <div class="row full-parent-height">
         <div class="col-7">
             <div class="d-flex justify-content-center flex-column full-parent-height">
