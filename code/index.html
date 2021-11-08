@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../common/styles/bootstrap.css">
+	<link rel="stylesheet" href="style.css"/>
+	<title>Document</title>
+</head>
+<body style="background: transparent">
+<pre class="card-text">
+<span class="keyword">const</span> wakeUp = <span class="keyword">async</span> () => Promise.<span class="code-method">resolve</span>(<span class="code-string">'I am up'</span>)
+
+<span class="keyword">const</span> ownerUp = <span class="keyword">async</span> () => Promise.<span class="code-method">resolve</span>(<span class="code-string">'Owner is up'</span>)
+
+<span class="keyword">const</span> meow = () => console.<span class="code-method">log</span>(<span class="code-string">'MEOW'</span>)
+
+<span class="keyword">const</span> repeat = () => Promise.<span class="code-method">any</span>([ownerUp(), process.nextTick(morning())])
+	.<span class="code-method">then</span>(() => process.<span class="code-method">exit</span>(0))
+
+<span class="keyword">export</span> <span class="keyword">const</span> morning = () => wakeUp()
+	.<span class="code-method">then</span>(meow)
+	.<span class="code-method">then</span>(repeat)
+</pre>
+</body>
+</html>

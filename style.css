@@ -98,3 +98,7 @@
 tbody tr {
     cursor: pointer;
 }
+
+.code-background {
+    background-color: rgba(0, 0, 0, 0.4);
+}

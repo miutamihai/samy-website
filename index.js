@@ -35,3 +35,5 @@ const onSecondArrowClick = () => document.getElementById('secondSection').scroll
 
 const onCodingArrowClick = () => document.getElementById('codingSection').scrollIntoView()
 
+const onOwnerArrowClick = () => document.getElementById('ownerSection').scrollIntoView()
+
