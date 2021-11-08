@@ -21,8 +21,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
-CONTENT
+<div class="container full-screen-height">
+    <h1 class="text-center">
+        Tell me your thoughts
+    </h1>
+    <form>
+        <fieldset>
+            <div class="form-group has-success">
+                <label class="form-label mt-4" for="opinionSamy">How do you find me?</label>
+                <input type="text" value="" class="form-control" id="opinionSamy" oninput="onSamyOpinionChange(this.value)">
+                <div class="valid-feedback hidden" id="opinionSamyGood">Oh, thank you very much! 😸</div>
+                <div class="invalid-feedback hidden" id="opinionSamyBad">That's not very nice. Be nicer! 😾</div>
+            </div>
+        </fieldset>
+    </form>
+</div>
 </body>
 </html>
