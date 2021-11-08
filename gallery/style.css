@@ -10,6 +10,12 @@
     cursor: pointer;
 }
 
+.gallery-item-modal-content {
+    border-radius: 10px;
+    height: 80vh;
+    width: 30vw;
+}
+
 .gallery-item-text {
     position: relative;
     margin-top: -40px;
