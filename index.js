@@ -33,3 +33,5 @@ const onFirstArrowClick = () => document.getElementById('firstSection').scrollIn
 
 const onSecondArrowClick = () => document.getElementById('secondSection').scrollIntoView()
 
+const onCodingArrowClick = () => document.getElementById('codingSection').scrollIntoView()
+

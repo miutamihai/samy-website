@@ -61,3 +61,40 @@
     height: 50px;
     width: 50px;
 }
+
+.reaction-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+}
+
+.reaction-modal-body {
+    height: 60vh;
+}
+
+.reaction-modal-body-no-like {
+    background: url("common/assets/no-like.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.reaction-modal-body-like {
+    background: url("common/assets/like.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.reaction-modal-body p {
+    display: none;
+}
+
+.reaction-modal-body:hover p {
+    display: block;
+}
+
+.reaction-modal-body-text {
+    font-size: 40px;
+    background-color: rgba(149,192,226, 0.5);
+}
+
+tbody tr {
+    cursor: pointer;
+}

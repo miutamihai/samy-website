@@ -5,11 +5,56 @@
     <title>Samy</title>
     <link rel="stylesheet" href="common/styles/bootstrap.css">
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="shortcut icon" href="common/assets/favicon.ico" type="image/x-icon">
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </head>
-<body style="background-attachment: fixed">
+<body>
+<div class="modal fade" id="no-like" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Reaction</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body reaction-modal-body reaction-modal-body-no-like">
+                <div class="d-flex justify-content-end align-items-center flex-column full-parent-height">
+                    <p class="reaction-modal-body-text px-2">I HATE IT *hiss* 😿</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="like" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Reaction</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body reaction-modal-body reaction-modal-body-like">
+                <div class="d-flex justify-content-end align-items-center flex-column full-parent-height">
+                    <p class="reaction-modal-body-text px-2">ME LIKIE *purr* 😸</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <audio>
     <source src="common/assets/meow.wav"></source>
     Your ears won't hear this cat's beautiful voice.
@@ -73,9 +118,99 @@
     </div>
 </div>
 <div class="container full-screen-height" id="secondSection">
-    <div class="d-flex align-items-center justify-content-center full-parent-height">
-        CONTENT
+    <div class="row full-parent-height">
+        <div class="col-12">
+            <h1>My opinion on other things</h1>
+        </div>
+        <div class="col-12">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">My reaction to it</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-toggle="modal" data-target="#no-like">
+                    <th scope="row">Owner activity</th>
+                    <td>Vacuuming</td>
+                    <td>About twice a week</td>
+                    <td>
+                        <img src="common/assets/no-like.jpeg" alt="no-like" class="reaction-image"/>
+                    </td>
+                </tr>
+                <tr data-toggle="modal" data-target="#like">
+                    <th scope="row">Owner activity</th>
+                    <td>Cuddling</td>
+                    <td>All day, everyday</td>
+                    <td>
+                        <img src="common/assets/like.jpg" alt="like" class="reaction-image"/>
+                    </td>
+                </tr>
+                <tr data-toggle="modal" data-target="#no-like">
+                    <th scope="row">Random occurrences</th>
+                    <td>Barking</td>
+                    <td>Quite rare</td>
+                    <td>
+                        <img src="common/assets/no-like.jpeg" alt="no-like" class="reaction-image"/>
+                    </td>
+                </tr>
+                <tr data-toggle="modal" data-target="#no-like">
+                    <th scope="row">Random occurrences</th>
+                    <td>Loud noises</td>
+                    <td>From time to time</td>
+                    <td>
+                        <img src="common/assets/no-like.jpeg" alt="no-like" class="reaction-image"/>
+                    </td>
+                </tr>
+                <tr data-toggle="modal" data-target="#like">
+                    <th scope="row">Owner activity</th>
+                    <td>Coding</td>
+                    <td>Very often</td>
+                    <td>
+                        <img src="common/assets/like.jpg" alt="like" class="reaction-image"/>
+                    </td>
+                </tr>
+                <tr data-toggle="modal" data-target="#like">
+                    <th scope="row">Owner activity</th>
+                    <td>Gaming</td>
+                    <td>In the weekends</td>
+                    <td>
+                        <img src="common/assets/like.jpg" alt="like" class="reaction-image"/>
+                    </td>
+                </tr>
+                <tr data-toggle="modal" data-target="#like">
+                    <th scope="row">Personal activity</th>
+                    <td>Washing</td>
+                    <td>All the time</td>
+                    <td>
+                        <img src="common/assets/like.jpg" alt="like" class="reaction-image"/>
+                    </td>
+                </tr>
+                <tr data-toggle="modal" data-target="#no-like">
+                    <th scope="row">Owner activity</th>
+                    <td>Being washed</td>
+                    <td>Once about two weeks</td>
+                    <td>
+                        <img src="common/assets/no-like.jpeg" alt="no-like" class="reaction-image"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center full-parent-width full-parent-height">
+                <div class="floating next-section-container d-flex align-items-center justify-content-center">
+                    <i class="fas fa-chevron-down" style="font-size: 40px" onclick="onCodingArrowClick()"></i>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<div class="container full-screen-height" id="codingSection">
+    CONTENT
 </div>
 </body>
 </html>
