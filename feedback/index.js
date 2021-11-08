@@ -31,3 +31,18 @@ const onWebsiteOpinionChange = value => {
 		document.getElementById('opinionWebsiteBad').style.display = 'none'
 	}
 }
+
+const onOwnerOpinionChange = value => {
+	if(good.includes(value)) {
+		document.getElementById('opinionOwner').classList.add('is-valid')
+		document.getElementById('opinionOwnerGood').style.display = 'block'
+	} else if(bad.includes(value)) {
+		document.getElementById('opinionOwner').classList.add('is-invalid')
+		document.getElementById('opinionOwnerBad').style.display = 'block'
+	} else {
+		document.getElementById('opinionOwner').classList.remove('is-valid')
+		document.getElementById('opinionOwner').classList.remove('is-invalid')
+		document.getElementById('opinionOwnerGood').style.display = 'none'
+		document.getElementById('opinionOwnerBad').style.display = 'none'
+	}
+}
