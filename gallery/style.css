@@ -1,0 +1,30 @@
+.gallery-list {
+    overflow-y: auto;
+    height: 80vh;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    height: 300px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.gallery-item-text {
+    position: relative;
+    margin-top: -40px;
+    max-width: 250px;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.col-3 .gallery-item-text {
+    display: none;
+}
+
+.col-3:hover .gallery-item-text {
+    display: block;
+}
