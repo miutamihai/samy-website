@@ -59,3 +59,31 @@ const onOwnerOpinionChange = value => {
 		setSubmitDisabled(false)
 	}
 }
+
+const getSamyOpinion = () => document
+	.getElementById('opinionSamy')
+	.value
+
+
+const getWebsiteOpinion = () => document
+	.getElementById('opinionWebsite')
+	.value
+
+const getOwnerOpinion = () => document
+	.getElementById('opinionOwner')
+	.value
+
+const submitForm = () => {
+	let result = 'Thank you,'
+	if(getSamyOpinion()) {
+		result = `${result} you found me to be ${getSamyOpinion()},`
+	}
+	if(getWebsiteOpinion()) {
+		result = `${result} you found this website to be ${getWebsiteOpinion()},`
+	}
+	if(getOwnerOpinion()) {
+		result = `${result} you found my owner's work to be ${getOwnerOpinion()},`
+	}
+	result = result.replace(/.$/,".")
+	window.alert(result)
+}
