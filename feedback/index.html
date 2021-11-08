@@ -30,11 +30,17 @@
     </h1>
     <form>
         <fieldset>
-            <div class="form-group has-success">
+            <div class="form-group">
                 <label class="form-label mt-4" for="opinionSamy">How do you find me?</label>
                 <input type="text" value="" class="form-control" id="opinionSamy" oninput="onSamyOpinionChange(this.value)">
                 <div class="valid-feedback hidden" id="opinionSamyGood">Oh, thank you very much! 😸</div>
                 <div class="invalid-feedback hidden" id="opinionSamyBad">That's not very nice. Be nicer! 😾</div>
+            </div>
+            <div class="form-group">
+                <label class="form-label mt-4" for="opinionWebsite">How did you find this website?</label>
+                <input type="text" value="" class="form-control" id="opinionWebsite" oninput="onWebsiteOpinionChange(this.value)">
+                <div class="valid-feedback hidden" id="opinionWebsiteGood">Oh, thank you very much! 😸</div>
+                <div class="invalid-feedback hidden" id="opinionWebsiteBad">That's not very nice. Be nicer! 😾</div>
             </div>
         </fieldset>
     </form>
