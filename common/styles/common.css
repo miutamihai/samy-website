@@ -1,0 +1,38 @@
+.full-screen-height {
+    height: 100vh;
+}
+
+.full-parent-height {
+    height: 100%;
+}
+
+.full-parent-width {
+    width: 100%;
+}
+
+.full-screen-width {
+    width: 100vw;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.back-arrow {
+    font-size: 80px;
+}
+
+#homeLink {
+    text-decoration: none;
+}
+
+#homeContainer p {
+    display: none;
+}
+
+#homeContainer:hover p {
+    display: block;
+}
